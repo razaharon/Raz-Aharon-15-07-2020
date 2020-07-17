@@ -1,0 +1,10 @@
+<div @fade @glide class="row">
+  <div class="col-12 text-center">
+    <h1>My Favorites</h1>
+  </div>
+</div>
+<div @delayedFade @delayedGlide class="row d-flex justify-content-around">
+  <div class="col-5 col-md-4 col-lg-3 text-center mt-2 pt-2" *ngFor="let favorite of favorites$ | async">
+    <app-favorite-item [weather]="favorite"></app-favorite-item>
+  </div>
+</div>

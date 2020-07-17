@@ -1,0 +1,11 @@
+<div @fade @glide class="row">
+  <div class="col-8 offset-2">
+    <app-search-bar (search)="onSearch($event)" [inputPlaceholder]="'Search State'" ></app-search-bar>
+  </div>
+</div>
+<div @delayedFade @delayedGlide class="row mt-2">
+  <div class="col-10 offset-1">
+    <app-weather-view *ngIf="isWeatherLoaded" [weather]="weather"></app-weather-view>
+  </div>
+</div>
+
