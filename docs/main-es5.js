@@ -2011,9 +2011,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     function FavoritesComponent_div_5_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 3);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "app-favorite-item", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "app-favorite-item", 4);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
@@ -2043,7 +2043,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       selectors: [["app-favorites"]],
       decls: 7,
       vars: 7,
-      consts: [[1, "row"], [1, "col-12", "text-center"], [1, "row", "d-flex", "justify-content-around"], ["class", "col-5 col-md-4 col-lg-3 text-center mt-2 pt-2", 4, "ngFor", "ngForOf"], [1, "col-5", "col-md-4", "col-lg-3", "text-center", "mt-2", "pt-2"], [3, "weather"]],
+      consts: [[1, "row"], [1, "col-12", "text-center"], ["class", "col-8 offset-2 offset-md-0 col-md-4 col-lg-3 text-center mt-2 pt-2", 4, "ngFor", "ngForOf"], [1, "col-8", "offset-2", "offset-md-0", "col-md-4", "col-lg-3", "text-center", "mt-2", "pt-2"], [3, "weather"]],
       template: function FavoritesComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
@@ -2060,9 +2060,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 2);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 0);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, FavoritesComponent_div_5_Template, 2, 1, "div", 3);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, FavoritesComponent_div_5_Template, 2, 1, "div", 2);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](6, "async");
 
