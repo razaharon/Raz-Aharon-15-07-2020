@@ -744,8 +744,13 @@ class SearchBarComponent {
             this.onSearch();
     }
     filterText() {
-        const nonEnglishRegex = new RegExp(/^[^A-Za-z]*$/);
-        this.searchInput = this.searchInput.replace(nonEnglishRegex, '');
+        try {
+            const nonEnglishRegex = new RegExp(/^[^A-Za-z]*$/);
+            this.searchInput = this.searchInput.replace(nonEnglishRegex, '');
+        }
+        catch (err) {
+            return;
+        }
     }
 }
 SearchBarComponent.ɵfac = function SearchBarComponent_Factory(t) { return new (t || SearchBarComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_auto_complete_service__WEBPACK_IMPORTED_MODULE_3__["AutoCompleteService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_shared_services_toast_service__WEBPACK_IMPORTED_MODULE_4__["ToastService"])); };
@@ -1700,8 +1705,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "environment", function() { return environment; });
 const environment = {
     production: false,
-    apiKey: 'OQ87QXhI3w8c6js4YH4P6DAZPUUP8iA6'
-    // apiKey: 'ywdGKGqV43j2QCwAnwtZJWDTCXk1GA40'
+    // apiKey: 'OQ87QXhI3w8c6js4YH4P6DAZPUUP8iA6'
+    apiKey: 'ywdGKGqV43j2QCwAnwtZJWDTCXk1GA40'
     // apiKey: '2Nj1GACFkAWToLTjCAOkdsVz5RtrsOym'
 };
 

@@ -1471,8 +1471,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "filterText",
         value: function filterText() {
-          var nonEnglishRegex = new RegExp(/^[^A-Za-z]*$/);
-          this.searchInput = this.searchInput.replace(nonEnglishRegex, '');
+          try {
+            var nonEnglishRegex = new RegExp(/^[^A-Za-z]*$/);
+            this.searchInput = this.searchInput.replace(nonEnglishRegex, '');
+          } catch (err) {
+            return;
+          }
         }
       }]);
 
@@ -3388,8 +3392,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var environment = {
       production: false,
-      apiKey: 'OQ87QXhI3w8c6js4YH4P6DAZPUUP8iA6' // apiKey: 'ywdGKGqV43j2QCwAnwtZJWDTCXk1GA40'
-      // apiKey: '2Nj1GACFkAWToLTjCAOkdsVz5RtrsOym'
+      // apiKey: 'OQ87QXhI3w8c6js4YH4P6DAZPUUP8iA6'
+      apiKey: 'ywdGKGqV43j2QCwAnwtZJWDTCXk1GA40' // apiKey: '2Nj1GACFkAWToLTjCAOkdsVz5RtrsOym'
 
     };
     /***/

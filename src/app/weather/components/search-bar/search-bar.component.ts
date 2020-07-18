@@ -37,8 +37,12 @@ export class SearchBarComponent {
   }
 
   public filterText(): void {
-    const nonEnglishRegex = new RegExp(/^[^A-Za-z]*$/);
-    this.searchInput = this.searchInput.replace(nonEnglishRegex, '');
+    try{
+      const nonEnglishRegex = new RegExp(/^[^A-Za-z]*$/);
+      this.searchInput = this.searchInput.replace(nonEnglishRegex, '');
+    } catch(err) {
+      return;
+    }
   }
 
   public selectFormatter = (value: IAutoCompleteResponse): string => {
