@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class AutoCompleteService {
 
-  private readonly url = 'http://dataservice.accuweather.com/locations/v1/cities/autocomplete';
+  private readonly url = 'https://dataservice.accuweather.com/locations/v1/cities/autocomplete';
 
   constructor(private _http: HttpClient) { }
 

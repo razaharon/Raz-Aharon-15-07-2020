@@ -9,7 +9,7 @@ import { IForecastResponse } from '../interfaces/iforecast-response';
 })
 export class ForecastService {
 
-  private readonly url = 'http://dataservice.accuweather.com/forecasts/v1/daily/5day/';
+  private readonly url = 'https://dataservice.accuweather.com/forecasts/v1/daily/5day/';
 
   constructor(private _http: HttpClient) { }
 

@@ -10,7 +10,7 @@ import { IGeolocationResponse } from '../interfaces/igeolocation-response';
 })
 export class GeolocationService {
 
-  private readonly url = 'http://dataservice.accuweather.com/locations/v1/cities/geoposition/search';
+  private readonly url = 'https://dataservice.accuweather.com/locations/v1/cities/geoposition/search';
 
   constructor(private _http: HttpClient) { }
 

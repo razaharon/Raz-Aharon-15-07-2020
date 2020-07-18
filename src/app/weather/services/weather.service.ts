@@ -9,7 +9,7 @@ import { IWeatherResponse } from '../interfaces/iweather-reponse';
 })
 export class WeatherService {
 
-  private readonly url: string = 'http://dataservice.accuweather.com/currentconditions/v1/';
+  private readonly url: string = 'https://dataservice.accuweather.com/currentconditions/v1/';
 
   constructor(private _http: HttpClient) { }
 
