@@ -2,11 +2,11 @@
   'bg-light': weatherHelper.isDayTime(weather),
   'bg-dark text-light': !weatherHelper.isDayTime(weather)}">
   <div class="row">
-    <div class="col-3 col-md-2 col-lg-1">
+    <div class="col-1 d-flex justify-content-center">
       <img class="weatherIcon" [src]="weatherHelper.getWeatherIconLink(weather.currentWeather.WeatherIcon)" alt="">
     </div>
-    <div class="col-6">
-      <h3>{{ weather.state }}, {{ weather.country }}</h3>
+    <div class="col-5">
+      <h4>{{ weather.state }}, {{ weather.country }}</h4>
       <span *ngIf="isCelsiusType">
         {{weatherHelper.getCTemperatureString(weather.currentWeather.Temperature.Metric)}}
       </span>
@@ -14,11 +14,11 @@
         {{weatherHelper.getFTemperatureString(weather.currentWeather.Temperature.Imperial)}}
       </span>
     </div>
-    <div class="col-3 col-md-4 col-lg-5 text-right">
-      <button *ngIf="!isFavorite()" (click)="addFavorite()" class="btn btn-lg btn-success">
+    <div class="col-5 text-right">
+      <button *ngIf="!isFavorite()" (click)="addFavorite()" class="btn btn btn-success">
         Add to Favorites
       </button>
-      <button *ngIf="isFavorite()" (click)="removeFavorite()" class="btn btn-lg btn-danger">
+      <button *ngIf="isFavorite()" (click)="removeFavorite()" class="btn btn btn-danger">
         Remove from Favorites
       </button>
       <app-toggle-button (onChangeState)="setTemperatureType($event)" class="d-block" [trueText]="'Celsius'"
