@@ -1808,7 +1808,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       },
       decls: 23,
       vars: 16,
-      consts: [[1, "jumbotron", "mt-2", "border", "pt-4", "pb-4", 3, "ngClass"], [1, "row"], [1, "col-3", "col-md-2", "col-lg-1"], ["alt", "", 1, "weatherIcon", 3, "src"], [1, "col-6"], [4, "ngIf"], [1, "col-3", "col-md-4", "col-lg-5", "text-right"], ["class", "btn btn-lg btn-success", 3, "click", 4, "ngIf"], ["class", "btn btn-lg btn-danger", 3, "click", 4, "ngIf"], [1, "d-block", 3, "trueText", "falseText", "onChangeState"], [1, "row", "mt-4"], [1, "col-12", "text-center"], [1, "row", "mt-4", "d-flex", "justify-content-around"], ["class", "col-5 col-lg-2 border m-1 text-center p-2 text-wrap mt-2", 4, "ngFor", "ngForOf"], [1, "btn", "btn-lg", "btn-success", 3, "click"], [1, "btn", "btn-lg", "btn-danger", 3, "click"], [1, "col-5", "col-lg-2", "border", "m-1", "text-center", "p-2", "text-wrap", "mt-2"], [3, "iconUrl", "date", "text", "tempRange"]],
+      consts: [[1, "jumbotron", "mt-2", "border", "pt-4", "pb-4", 3, "ngClass"], [1, "row"], [1, "col-1", "d-flex", "justify-content-center"], ["alt", "", 1, "weatherIcon", 3, "src"], [1, "col-5"], [4, "ngIf"], [1, "col-5", "text-right"], ["class", "btn btn btn-success", 3, "click", 4, "ngIf"], ["class", "btn btn btn-danger", 3, "click", 4, "ngIf"], [1, "d-block", 3, "trueText", "falseText", "onChangeState"], [1, "row", "mt-4"], [1, "col-12", "text-center"], [1, "row", "mt-4", "d-flex", "justify-content-around"], ["class", "col-5 col-lg-2 border m-1 text-center p-2 text-wrap mt-2", 4, "ngFor", "ngForOf"], [1, "btn", "btn", "btn-success", 3, "click"], [1, "btn", "btn", "btn-danger", 3, "click"], [1, "col-5", "col-lg-2", "border", "m-1", "text-center", "p-2", "text-wrap", "mt-2"], [3, "iconUrl", "date", "text", "tempRange"]],
       template: function WeatherViewComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
@@ -1823,7 +1823,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 4);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "h3");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "h4");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6);
 
