@@ -1068,7 +1068,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function SearchPageComponent_app_weather_view_5_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "app-weather-view", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "app-weather-view", 5);
 } if (rf & 2) {
     const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("weather", ctx_r0.weather);
@@ -1138,7 +1138,7 @@ class SearchPageComponent {
     }
 }
 SearchPageComponent.ɵfac = function SearchPageComponent_Factory(t) { return new (t || SearchPageComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_services_weather_service__WEBPACK_IMPORTED_MODULE_3__["WeatherService"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_services_forecast_service__WEBPACK_IMPORTED_MODULE_4__["ForecastService"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_services_geolocation_service__WEBPACK_IMPORTED_MODULE_5__["GeolocationService"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_6__["ActivatedRoute"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](src_app_shared_services_toast_service__WEBPACK_IMPORTED_MODULE_7__["ToastService"])); };
-SearchPageComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: SearchPageComponent, selectors: [["app-search-page"]], decls: 6, vars: 6, consts: [[1, "row"], [1, "col-8", "offset-2"], [3, "inputPlaceholder", "search"], [1, "row", "mt-2"], [1, "col-10", "offset-1"], [3, "weather", 4, "ngIf"], [3, "weather"]], template: function SearchPageComponent_Template(rf, ctx) { if (rf & 1) {
+SearchPageComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: SearchPageComponent, selectors: [["app-search-page"]], decls: 6, vars: 6, consts: [[1, "row"], [1, "col-10", "offset-1"], [3, "inputPlaceholder", "search"], [1, "row", "mt-2"], [3, "weather", 4, "ngIf"], [3, "weather"]], template: function SearchPageComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "app-search-bar", 2);
@@ -1147,8 +1147,8 @@ SearchPageComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefi
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "div", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "div", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](5, SearchPageComponent_app_weather_view_5_Template, 1, 1, "app-weather-view", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](5, SearchPageComponent_app_weather_view_5_Template, 1, 1, "app-weather-view", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     } if (rf & 2) {
@@ -1203,7 +1203,7 @@ __webpack_require__.r(__webpack_exports__);
 class AutoCompleteService {
     constructor(_http) {
         this._http = _http;
-        this.url = 'http://dataservice.accuweather.com/locations/v1/cities/autocomplete';
+        this.url = 'https://dataservice.accuweather.com/locations/v1/cities/autocomplete';
     }
     getAutoComplete(value) {
         return this._http.get(this.url, {
@@ -1246,7 +1246,7 @@ __webpack_require__.r(__webpack_exports__);
 class ForecastService {
     constructor(_http) {
         this._http = _http;
-        this.url = 'http://dataservice.accuweather.com/forecasts/v1/daily/5day/';
+        this.url = 'https://dataservice.accuweather.com/forecasts/v1/daily/5day/';
     }
     getForecast(locationKey) {
         return this._http.get(this.url + locationKey, {
@@ -1290,7 +1290,7 @@ __webpack_require__.r(__webpack_exports__);
 class GeolocationService {
     constructor(_http) {
         this._http = _http;
-        this.url = 'http://dataservice.accuweather.com/locations/v1/cities/geoposition/search';
+        this.url = 'https://dataservice.accuweather.com/locations/v1/cities/geoposition/search';
     }
     getGeolocation() {
         return new Promise((res, rej) => {
@@ -1344,7 +1344,7 @@ __webpack_require__.r(__webpack_exports__);
 class WeatherService {
     constructor(_http) {
         this._http = _http;
-        this.url = 'http://dataservice.accuweather.com/currentconditions/v1/';
+        this.url = 'https://dataservice.accuweather.com/currentconditions/v1/';
     }
     getCurrentWeather(locationKey) {
         return this._http.get(this.url + locationKey, {

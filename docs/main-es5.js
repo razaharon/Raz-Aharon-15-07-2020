@@ -2193,7 +2193,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     function SearchPageComponent_app_weather_view_5_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "app-weather-view", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "app-weather-view", 5);
       }
 
       if (rf & 2) {
@@ -2332,7 +2332,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       selectors: [["app-search-page"]],
       decls: 6,
       vars: 6,
-      consts: [[1, "row"], [1, "col-8", "offset-2"], [3, "inputPlaceholder", "search"], [1, "row", "mt-2"], [1, "col-10", "offset-1"], [3, "weather", 4, "ngIf"], [3, "weather"]],
+      consts: [[1, "row"], [1, "col-10", "offset-1"], [3, "inputPlaceholder", "search"], [1, "row", "mt-2"], [3, "weather", 4, "ngIf"], [3, "weather"]],
       template: function SearchPageComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0);
@@ -2353,9 +2353,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "div", 3);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "div", 4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "div", 1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](5, SearchPageComponent_app_weather_view_5_Template, 1, 1, "app-weather-view", 5);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](5, SearchPageComponent_app_weather_view_5_Template, 1, 1, "app-weather-view", 4);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -2456,7 +2456,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         _classCallCheck(this, AutoCompleteService);
 
         this._http = _http;
-        this.url = 'http://dataservice.accuweather.com/locations/v1/cities/autocomplete';
+        this.url = 'https://dataservice.accuweather.com/locations/v1/cities/autocomplete';
       }
 
       _createClass(AutoCompleteService, [{
@@ -2544,7 +2544,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         _classCallCheck(this, ForecastService);
 
         this._http = _http;
-        this.url = 'http://dataservice.accuweather.com/forecasts/v1/daily/5day/';
+        this.url = 'https://dataservice.accuweather.com/forecasts/v1/daily/5day/';
       }
 
       _createClass(ForecastService, [{
@@ -2637,7 +2637,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         _classCallCheck(this, GeolocationService);
 
         this._http = _http;
-        this.url = 'http://dataservice.accuweather.com/locations/v1/cities/geoposition/search';
+        this.url = 'https://dataservice.accuweather.com/locations/v1/cities/geoposition/search';
       }
 
       _createClass(GeolocationService, [{
@@ -2767,7 +2767,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         _classCallCheck(this, WeatherService);
 
         this._http = _http;
-        this.url = 'http://dataservice.accuweather.com/currentconditions/v1/';
+        this.url = 'https://dataservice.accuweather.com/currentconditions/v1/';
       }
 
       _createClass(WeatherService, [{
